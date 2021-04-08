@@ -4,7 +4,7 @@ tasks:
   - before: sudo docker-up
     name: Docker Deamon
   - init: git lfs pull && echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN"
-      >>~/.npmrc && doppler configure set token $DOPPLER_TOKEN && doppler setup --no-prompt && yarn --frozen-lockfile
+      >>~/.npmrc && doppler setup --no-prompt && yarn --frozen-lockfile
 vscode:
   extensions:
     - karlito40.fix-irregular-whitespace@0.0.3:8jjyZYuYF6yW6nwsAiulrg==
