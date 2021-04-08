@@ -7,3 +7,5 @@ jobs:
         steps:
             - name: Test Doppler Access
               run: printenv | grep FOO
+              env:
+                FOO: ${{ secrets.FOO }}
