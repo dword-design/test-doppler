@@ -1,2 +1,3 @@
 setup:
-  project: test
+  config: dev
+  project: test-doppler
